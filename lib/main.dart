@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:oktoast/oktoast.dart';
+
+import 'core/di/app_binds.dart';
+import 'core/routes/app_routes.dart';
+import 'core/sl/sl.dart';
+import 'features/spalsh/pages/spalsh_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initSL();
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return OKToast(
+        dismissOtherOnShow: true,
+        child: GestureDetector(
+          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+          child: GetMaterialApp(
+            debugShowCheckedModeBanner: false,
+            builder: (context, child) {
+              return MediaQuery(
+                  data: MediaQuery.of(context).copyWith(
+                    textScaleFactor: 1,
+                  ),
+                  child: child!);
+            },
+            getPages: AppPages.pages,
+            initialRoute: SplashScreen.route,
+          ),
+        ));
+  }
+}
