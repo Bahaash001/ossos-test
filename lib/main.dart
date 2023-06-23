@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oktoast/oktoast.dart';
 
-import 'core/di/app_binds.dart';
-import 'core/routes/app_routes.dart';
-import 'core/sl/sl.dart';
-import 'features/spalsh/pages/spalsh_screen.dart';
+import 'src/core/routes/app_routes.dart';
+import 'src/core/sl/sl.dart';
+import 'src/features/spalsh/pages/spalsh_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
