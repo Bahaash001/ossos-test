@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:ossos_test/src/features/home/pages/animations_screen.dart';
-import 'package:ossos_test/src/features/home/pages/home_screen.dart';
+import 'package:ossos_test/src/features/home/presentations/pages/animations_screen.dart';
+import 'package:ossos_test/src/features/home/presentations/pages/home_screen.dart';
 import 'package:ossos_test/src/features/pokemons/presentation/pages/pokemons_screen.dart';
 
 import '../../features/spalsh/pages/spalsh_screen.dart';

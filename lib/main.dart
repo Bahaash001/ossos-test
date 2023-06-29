@@ -30,6 +30,7 @@ class MainApp extends StatelessWidget {
                   ),
                   child: child!);
             },
+            // home: AnimationScreen(),
             getPages: AppPages.pages,
             initialRoute: SplashScreen.route,
           ),

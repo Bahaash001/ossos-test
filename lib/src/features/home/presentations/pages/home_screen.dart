@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ossos_test/src/core/widgets/custom_text.dart';
 import 'package:ossos_test/src/core/widgets/elevated_button.dart';
-import 'package:ossos_test/src/features/home/manager/home_controller.dart';
-import 'package:ossos_test/src/features/home/pages/animations_screen.dart';
+import 'package:ossos_test/src/features/home/presentations/manager/home_controller.dart';
+import 'package:ossos_test/src/features/home/presentations/pages/animations_screen.dart';
 import 'package:ossos_test/src/features/pokemons/presentation/pages/pokemons_screen.dart';
 
 class HomeScreen extends GetView<HomeController> {

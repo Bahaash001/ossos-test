@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../../features/home/manager/animations_controller.dart';
-import '../../features/home/manager/home_controller.dart';
+import '../../features/home/presentations/manager/animations_controller.dart';
+import '../../features/home/presentations/manager/home_controller.dart';
 import '../../features/spalsh/manager/splash_controller.dart';
 
 void initBinds() {
