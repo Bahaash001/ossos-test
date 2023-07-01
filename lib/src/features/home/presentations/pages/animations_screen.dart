@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ossos_test/src/core/constant/const_values.dart';
 import 'package:ossos_test/src/core/widgets/custom_text.dart';
-import 'package:ossos_test/src/features/home/domain/models/shape_color_model.dart';
-import 'package:ossos_test/src/features/home/presentations/manager/home_controller.dart';
 
 import '../manager/animations_controller.dart';
+import '../manager/home_controller.dart';
 import '../widgets/shape_widget.dart';
 
 class AnimationsScreen extends GetView<AnimationsController> {
@@ -36,12 +35,13 @@ class AnimationsScreen extends GetView<AnimationsController> {
                 child: GetBuilder<AnimationsController>(
                     init: controller,
                     builder: (controller) => AnimatedContainer(
-                        duration: defaultDuration,
+                        duration: defaultDurationF,
                         width: Get.width * 0.6,
                         height: Get.width * 0.6,
                         decoration: BoxDecoration(
                             color: controller.coloredShape.color,
-                            borderRadius: BorderRadius.circular(controller.coloredShape.radius * 2)))),
+                            borderRadius: BorderRadius.circular(
+                                controller.coloredShape.radius)))),
               ),
             ),
             SizedBox(height: Get.height * 0.2),
